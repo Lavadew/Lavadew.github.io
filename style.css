@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+img {
+    width:100%;
+}
+
+#MenuLogo{
+    height:40px;
+    width:auto;
+}
+
+section {
+    width:90%;
+    margin:0 auto;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+#myMenu{
+    display:flex;
+    flex-direction:row-reverse;
+    padding:1em;
+    list-style: none;
+    margin:0;
+    position: fixed;
+    top: 0px;
+    right: 5em;
+    z-index: 70;
+}
+
+#myMenu li a{
+    text-decoration:none;
+    display:block;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    font-weight:700;
+}
+
+#myMenu li a:hover{
+    color:#B71600;
+    transition: 0.3s ease-in-out;
+}
+
+.section{
+    background-color: #333;;
+    color:white;
+}
+
+
+.Profile {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding:50px;
+    width:95%;
+    margin:0 auto;
+}
+
+#profile {
+    display:block;
+    margin:0 auto;
+    width:400px;
+    border-radius:50%;
+    
+}
+
+.child {
+    flex:1;
+    z-index:2;
+}
+
+
+h1{
+    font-size:72px;
+    
+}
+
+.introduction h2{
+    font-size:40px;
+    font-weight:500;
+}
+
+.introduction{
+    color:#ffffff;
+}
+
+.portfolioButton{
+    position:absolute;
+    right:13em;
+    margin-top:1em;
+}
+
+.portfolioButton a{
+    display:block;
+    width:100%;
+    padding:15px 10px;
+    color:white;
+    text-decoration:none;
+    background-color:#B71600;
+    z-index:1;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolioButton a:hover{
+    background-color:#FF8800;
+    transform: scale(1.1, 1.1);
+}
+
+#visualBox{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:0;
+}
+
+.supporting {
+    width:20%;
+    height:100vh;
+    z-index:0;
+}
+
+.section1 .supporting, .section3 .supporting{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;
+}
+
+.section2 .supporting, .section4 .supporting{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:1;
+}
+
+.section1 svg, .section3 svg{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+
+.aboutme p{
+    font-size:1.3em;
+}
+
+.article{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    box-sizing: border-box;
+    width:90%;
+    margin:0 auto;
+}
+
+.portfolio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    box-sizing: border-box;
+    width:90%;
+    margin:0 auto;
+}
+
+#logo {
+    display:block;
+    margin:0 auto;
+    width:300px;
+    z-index:3;
+}
+
+}
+
+/* Section 3 */
+
+.section3 .title{
+    z-index:4
+}
+
+.portfolio .childbutton {
+    background-color:#ED1C24;
+    color:white;
+    font-size:24px;
+    text-decoration: none;
+    text-align:center;
+    flex:1;
+    margin:0 15px;
+    padding:100px 100px;
+    z-index:5;
+    transition: 0.3s ease-in-out;
+}
+
+.childbutton:hover {
+    background-color:#93121C;
+    transform: scale(1.1,1.1);
+}
+
+.section4 .pagination{
+    opacity:0.2;
+    position:absolute;
+    left:0px;
+    top:25%;
+    font-size:300px;
+    user-select: none;
+    z-index:1;
+}
+
+.contactUs {
+    display:flex;
+    align-items: center;
+    width:85%;
+    margin:0 auto;
+}
+
+.section4 .child {
+    display:flex;
+    flex:1;
+}
+
+.section4 .child p{
+    z-index:5;
+    font-size:24px;
+    margin-right:50px;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+    z-index:5;
+}
+
+.form input{
+    padding:10px;
+    color:#555;
+}
+
+.form input,.form label{
+    z-index:5;
+    font-size:18px;
+    min-width:500px;
+}
+
+input:focus,textarea:focus {
+    border: 2px solid #ED1C24;
+    outline:2px;
+}
+
+.form label{
+    margin:20px 0 10px 0;
+    opacity:0.8;
+    font-weight:700px;
+}
+
+textarea{
+    min-height:160px;
+}
+
+input[type="submit"] {
+    background-color:#ED1C24;
+    color:white;
+    outline:0;
+    border:none;
+    transition:0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color:#93121C;
+    color:white;
+    
+}
+
+#mail {
+    color:#FFCE00;
+    text-decoration:none;
+    transition:0.3s ease-in-out;
+}
+
+#mail:hover {
+    color:white;
+    text-decoration:underline;
+}
+
+#fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span{
+    background-color: white;
+}
+
+#firstPage {
+    background-image:url("https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")
+}

@@ -1,0 +1,92 @@
+.active #profile  {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.active .aboutme {
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+.active .introduction, .active .portfolioButton, .active .aboutMe {
+    animation: slideInUp 1s ease-in-out;
+}
+
+.active #visualBox{
+    animation: slideInDown 1s ease-in-out;
+}
+
+.active #logo {
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+.active .button1,.active .button4 {
+    animation: slideInUp 0.5s ease-in-out;
+}
+
+.active .button2,.active .button5 {
+    animation: slideInUp 1s ease-in-out;
+}
+
+.active .button3,.active .button6 {
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+
+@keyframes slideInLeft {
+    from{
+        opacity:0;
+        transform: translate(-600px);
+    }
+
+    to{
+        opacity:1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes slideInRight {
+    from{
+        opacity:0;
+        transform: translate(600px);
+    }
+
+    to{
+        opacity:1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes slideInUp {
+    from{
+        opacity:0;
+        transform: translateY(600px)
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes slideInDown {
+    from{
+        opacity:0;
+        transform: translateY(-600px)
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes zooming {
+    from{
+        opacity:0;
+        transform:scale(0.8,0.8);
+    }
+
+    to{
+        opacity:0.2;
+        transform:scale(1,1);
+    }
+}
