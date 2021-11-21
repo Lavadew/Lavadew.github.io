@@ -33,7 +33,7 @@ body{
 
 #myMenu ul{
     display:flex;
-    flex-direction:row-reverse;
+    flex-direction:row;
     padding:1em;
     list-style: none;
     margin:0;
@@ -46,20 +46,24 @@ body{
 #myMenu ul li a{
     text-decoration:none;
     display:block;
-    color:white;
+    color:#9420EF;
     padding:10px;
     font-size:20px;
     font-weight:700;
 }
 
 #myMenu li a:hover{
-    color:#B71600;
+    color:#21C7ED;
     transition: 0.3s ease-in-out;
 }
 
 .section{
     background-color: #333;;
-    color:white;
+    color:#A54CFB;
+}
+
+.section h1{
+    color:#AC57FF;
 }
 
 
@@ -75,10 +79,38 @@ body{
 
 #profile {
     display:block;
+    width:70%;
     margin:0 auto;
-    width:400px;
-    border-radius:50%;
     
+}
+
+.text {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+.borderButton {
+    color: #AC57FF;
+    border: solid #AC57FF;
+    text-decoration:none;
+    transform:skew(-5deg);
+    margin-right:3em;
+    padding:1em 2em;
+    background-color:rgba(165,76,251,0.25);
+    transition: 0.3s ease-in-out;
+}
+
+.borderButton:hover {
+    color:#21C6EC;
+    border-color:#21C6EC;
+    background-color:rgba(33,198,236,0.20);
+    transform:scale(1.1) skew(-5deg);
+    
+}
+
+.parent {
+    display:flex;
 }
 
 .child {
@@ -86,10 +118,33 @@ body{
     z-index:2;
 }
 
+.flex {
+    display:flex;
+    background-color:rgba(33,198,236,0.20);
+    border: solid rgba(33,198,236,1);
+    padding:1em 3em;
+}
+
+.galleryContent {
+    display:flex;
+    margin:0 auto;
+    width:80%;
+}
+
+.galleryContent .child{
+    margin:1em;
+}
+
+
 
 h1{
-    font-size:72px;
+    font-size:60px;
     
+}
+
+#title{
+    font-size:40px;
+    text-align: center;
 }
 
 .introduction h2{
@@ -101,34 +156,6 @@ h1{
     color:#ffffff;
 }
 
-.portfolioButton{
-    position:absolute;
-    right:13em;
-    margin-top:1em;
-}
-
-.portfolioButton a{
-    display:block;
-    width:100%;
-    padding:15px 10px;
-    color:white;
-    text-decoration:none;
-    background-color:#B71600;
-    z-index:1;
-    transition: 0.3s ease-in-out;
-}
-
-.portfolioButton a:hover{
-    background-color:#FF8800;
-    transform: scale(1.1, 1.1);
-}
-
-#visualBox{
-    position:absolute;
-    right:0px;
-    top:0px;
-    z-index:0;
-}
 
 .supporting {
     width:20%;
@@ -136,29 +163,27 @@ h1{
     z-index:0;
 }
 
-.section1 .supporting, .section3 .supporting{
+.section1 .supporting, .section3 .supporting, .section5 .supporting, .section7 .supporting{
     position:absolute;
-    left:0px;
-    top:0px;
+    left:-20px;
+    top:2em;
     z-index:1;
 }
 
-.section2 .supporting, .section4 .supporting{
+.section2 .supporting,.section4 .supporting ,.section6 .supporting{
     position:absolute;
-    right:0px;
-    top:0px;
+    right:-20px;
+    top:2em;
     z-index:1;
 }
 
-.section1 svg, .section3 svg{
-    position:absolute;
-    left:0px;
-    top:0px;
-    z-index:-1;
-}
 
 .aboutme p{
     font-size:1.3em;
+}
+
+.aboutme img{
+    width:30%;
 }
 
 .article{
@@ -197,32 +222,37 @@ h1{
 }
 
 .portfolio .childbutton {
-    background-color:#ED1C24;
+    display:block;
+    position: relative;
     color:white;
     font-size:24px;
     text-decoration: none;
     text-align:center;
-    flex:1;
+    width:33%;
     margin:0 15px;
-    padding:100px 100px;
+    height:100%;
     z-index:5;
     transition: 0.3s ease-in-out;
 }
 
 .childbutton:hover {
-    background-color:#93121C;
     transform: scale(1.1,1.1);
 }
 
-.section4 .pagination{
-    opacity:0.2;
+.childbutton h4 {
+    color:white;
     position:absolute;
-    left:0px;
-    top:25%;
-    font-size:300px;
-    user-select: none;
-    z-index:1;
+    padding:30px;
+    bottom:0;
 }
+
+.button1 {
+    background-image:url(Content/Banner1.png);
+    background-size:cover;
+}
+
+/* Section 4 */
+
 
 .contactUs {
     display:flex;
@@ -231,30 +261,24 @@ h1{
     margin:0 auto;
 }
 
-.section4 .child {
-    display:flex;
+.contactUs .child {
     flex:1;
 }
 
-.section4 .child p{
-    z-index:5;
-    font-size:24px;
-    margin-right:50px;
-}
 
-.form {
+form {
     display:flex;
     flex-direction: column;
     padding:50px;
     z-index:5;
 }
 
-.form input{
+form input{
     padding:10px;
     color:#555;
 }
 
-.form input,.form label{
+form input,.form label{
     z-index:5;
     font-size:18px;
     min-width:500px;
@@ -265,7 +289,7 @@ input:focus,textarea:focus {
     outline:2px;
 }
 
-.form label{
+form label{
     margin:20px 0 10px 0;
     opacity:0.8;
     font-weight:700px;
@@ -276,7 +300,7 @@ textarea{
 }
 
 input[type="submit"] {
-    background-color:#ED1C24;
+    background-color:#A54CFB;
     color:white;
     outline:0;
     border:none;
@@ -284,13 +308,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color:#93121C;
+    background-color:#A54CFB;
     color:white;
     
 }
 
 #mail {
-    color:#FFCE00;
+    color:#2EC3E9;
     text-decoration:none;
     transition:0.3s ease-in-out;
 }
@@ -300,10 +324,87 @@ input[type="submit"]:hover {
     text-decoration:underline;
 }
 
+#resume {
+    color:#2EC3E9;
+    text-decoration:none;
+    transition:0.3s ease-in-out;
+}
+
+#resume:hover {
+    color:white;
+    text-decoration:underline; 
+}
+
+#contactNumber {
+    color:#2EC3E9;
+    font-size:1em;
+}
+
 #fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span{
     background-color: white;
 }
 
-#firstPage {
-    background-image:url("https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")
+/* Responsive Portion */
+
+@media only screen and (max-width: 600px) {
+    .Profile {
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        
+    }
+    
+    .text a {
+        margin:0 auto;
+    }
+    
+    .portfolioButton a{
+        padding:10px 5px;
+        font-size:14px;
+    }
 }
+
+/* Portfolio Content Section */
+
+.galleryContent {
+    font-size:1em;
+    color:#2EC3E9;  
+}
+
+.galleryContent h1{
+    font-size:1.5em;
+}
+
+
+.mainPortion1{
+    flex:1;
+}
+
+.mainPortion2{
+    flex:3;
+}
+
+#role {
+    margin-left:2em;
+}
+
+.subPortion1{
+    flex:3;
+    color:rgba(33,198,236,1);
+}
+
+.subPortion2{
+    flex:1;
+    color:rgba(33,198,236,1);
+}
+
+.zoom{
+    transition: ease-in-out 1s;
+}
+
+.zoom:hover{
+    transform:scale(1.5);
+}
+
+
+

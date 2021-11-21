@@ -1,14 +1,19 @@
-.active #profile  {
+.active #profile, .active .left  {
     animation: slideInLeft 1s ease-in-out;
 }
 
-.active .aboutme {
+.active .aboutme  {
     animation: slideInRight 1.5s ease-in-out;
 }
 
-.active .introduction, .active .portfolioButton, .active .aboutMe {
+.active .right  {
+    animation: slideInRight 1.2s ease-in-out;
+}
+
+.active .introduction, .active .portfolioButton, .active .aboutMe, .active .up  {
     animation: slideInUp 1s ease-in-out;
 }
+
 
 .active #visualBox{
     animation: slideInDown 1s ease-in-out;

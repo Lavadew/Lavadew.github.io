@@ -19,11 +19,12 @@
          <img id="MenuLogo" src="Logo.png">
       
         <ul>
+            <li data-menuanchor="Home" class="active"><a href="#Home">Home</a></li>
+            <li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li> 
+            <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
             
-            <li data-menuanchor="fourthPage"><a href="#fourthPage">Contact</a></li>
-            <li data-menuanchor="thirdPage"><a href="#thirdPage">Portfolio</a></li> 
-            <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
-            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+            
+            
         </ul>
         </nav>
    
@@ -35,95 +36,70 @@
             <div class="Profile">
 
                 <div class="child">
-                <img id="profile" src="Profile Picture.jpg">
+                <img id="profile" src="Profile Picture.png">
                 </div>
             
                 <div class="child text">
                     <div class="introduction">
                         <img src="Introduction.png">
                     </div>
-                    
-                    <div class="portfolioButton">  
-                        <a  href="#portfolio">View Portfolio</a>
-                    </div> 
+                    <a class="borderButton right" href="#portfolio">View Portfolio</a>
                 </div>
+                
+    
             </div>
             
              <img class="supporting" src="Supporting.png">
-            <svg id="visualBox" width="30%" height="100vh">
-                <rect width="100%" height="100vh" style="fill:#111111;" />
-            </svg>
             
         </div>
-
-            <div id="#secondPage"  class="section section2">
-            <div class="article">
-
-                <div class="child">
-                    <img id="logo" src="MTLOGO.png">
-                </div>
-
-                <div class="child">
-                    <div class="aboutme">
-                        <h1>About Me</h1>
-                        <p>An individual that is passionate about Web Design & Web Development. Standing commitee for Singapore Polytechnic Publicity</p>
-                    </div>
-                </div>
-            </div>
-
-            <img class="supporting" src="Supporting.png">
-            <svg id="visualBox" width="30%" height="100vh">
-                <rect width="100%" height="100vh" style="fill:#222222;" />
-            </svg>
             
-        </div>
 
-        <div id="#thirdPage" class="section section3">
+        <div id="#secondPage" class="section section2">
 
 
             <div class="portfolio">
                 
-                <a class="childbutton button1" href="#">
-                    Brand Design
+                <a class="childbutton" href="Page/1.html">
+                   <h4> WhatIf Foods Brand/Web Design </h4>
+                    <img src="Content/Banner1.png">
                 </a>
 
-                <a class="childbutton button2" href="#">
-                    Web Design
+                <a class="childbutton" href="Page/2.html">
+                   <h4> Adidas Campaign Poster Series</h4>
+                    <img src="Content/Banner2.png">
                 </a>
 
-                <a class="childbutton button3" href="#">
-                    Graphic Design
+                <a class="childbutton" href="Page/3.html">
+                   <h4>Paul Hype Page Website Revamp</h4>
+                    <img src="Content/Banner3.png">
                 </a>
             </div>
             
             <div class="portfolio">
                 
-                <a class="childbutton button4" href="#">
-                    Brand Design
+                <a class="childbutton" href="Page/3.html">
+                   <h4>Benneth Tea Brand Design Packaging</h4>
+                    <img src="Content/Banner4.png">
                 </a>
 
-                <a class="childbutton button5" href="#">
-                    Web Design
+                <a class="childbutton" href="Page/4.html">
+                   <h4>Bak Kut Teh Infographic & Animation</h4>
+                    <img src="Content/Banner5.png">
                 </a>
 
-                <a class="childbutton button6" href="#">
-                    Graphic Design
-                </a>
             </div>
             
             <img class="supporting" src="Supporting.png">
-            <svg id="visualBox" width="30%" height="100vh">
-                <rect width="100%" height="100vh" style="fill:#222222;" />
-            </svg>
             
         </div>
 
-        <div  id="#fourthPage"  class="section section4">
+        <div  id="#fourthPage"  class="section section3">
 
             <div class="contactUs">
 
                 <div class="child">
-                    <div class="form">
+                    
+                        <form action="mailto:benjaminwong2503@gmail.com" method="post" enctype="text/plain">
 
                         <label for="fname">Name</label>
                         <input type="text" id="name" name="name">
@@ -136,35 +112,42 @@
                         </textarea>
 
                         <input type="submit" value="SEND">
+                       </form>
 
-
-                    </div>
-                </div>
+                 </div>
 
                 <div class="child">
-                    <p>Tell us all about your project right here, 
-                        or send us an email at <a id="mail" href="mailto:info.benwks@gmail.com">info.benwks@gmail.com</a></p>
+                        <h2>Email us</h2>
+                        <p>Tell us all about your project right here, 
+                        or send us an email at <a id="mail" href="mailto:benjaminwong2503@gmail.com">benjaminwong2503@gmail.com</a></p>
+                        <br>
+                        <h2>Phone</h2>
+                        <p id="contactNumber">91798332</p>
+                        <br>
+                        <h2>Resume</h2>
+                        <a id="resume" href="Benjamin_Resume.pdf"> Download Resume</a>
                 </div>
+                    
+                </div>
+                
+                <img class="supporting" src="Supporting.png">
+                
             </div>
             
-            <img class="supporting" src="Supporting.png">
-            <svg id="visualBox" width="30%" height="100vh">
-                <rect width="100%" height="100vh" style="fill:#111111;" />
-            </svg>
+            
             
         </div>
         
-    </div>
     
     <script>
             var myFullpage = new fullpage('#fullpage', {
             //Navigation
             menu: '#myMenu',
             lockAnchors: false,
-            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage' ],
+            anchors:['Home', 'Portfolio', 'Contact' ],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+            navigationTooltips: ['Home', 'Portfolio', 'Contact' ],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -202,7 +185,7 @@
             recordHistory: true,
 
             //Design
-            sectionsColor : ['#000000', '#000000', '#000000', '#000000'],
+            sectionsColor : ['#000016', '#000016', '#000016', '#000016'],
             controlArrows: true,
             verticalCentered: true,
             paddingTop: '3em',
