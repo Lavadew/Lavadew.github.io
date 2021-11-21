@@ -5,6 +5,7 @@
 
 img {
     width:100%;
+    z-index:70;
 }
 
 #MenuLogo{
@@ -118,6 +119,10 @@ body{
     z-index:2;
 }
 
+.child2 {
+    width:29%;
+}
+
 .flex {
     display:flex;
     background-color:rgba(33,198,236,0.20);
@@ -127,11 +132,16 @@ body{
 
 .galleryContent {
     display:flex;
+    justify-content: center;
     margin:0 auto;
     width:80%;
 }
 
 .galleryContent .child{
+    margin:1em;
+}
+
+.galleryContent .child2{
     margin:1em;
 }
 
@@ -404,6 +414,11 @@ input[type="submit"]:hover {
 
 .zoom:hover{
     transform:scale(1.5);
+}
+
+.margin {
+    margin-top:2em;
+    margin-right:2em;
 }
 
 
