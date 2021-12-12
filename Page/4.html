@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../fullpage.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../animation.css" />
+    <link rel="stylesheet" type="text/css" href="../lightbox.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="../fullpage.js"></script>
+    <script type="text/javascript" src="../lightbox.js"></script>
+    <script type="text/javascript" src="../dist/js/lightbox-plus-jquery.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
            <h1 id="title"> Bak Kut Teh Infographic & Animation  </h1>
 
             <div class="galleryContent">
-                   <div class="mainPortion2 left margin"><img src="../Content/Banner4.png"></div>
+                <div class="mainPortion2 left margin"><a href="../Content/Banner4.png" data-lightbox="BKTbanner" data-title="BKT Infographic Banner"><img src="../Content/Banner4.png"></a></div>
                    <div class="subPortion1 right margin">
                     <h1 style="color:#2EC3E9;">Background Info</h1>
                         <p> This was a class assignment, whereby we are required to create an infographic and a 2d animation infographic video on Local Cuisine / Musical Instrumental / Doctor Equipment. I decided to do one of my favourite local cuisine "Bak Kut Teh" and tries to learn more about the dishes. <br>
@@ -124,7 +127,7 @@
                             </div>
                             <div class="subPortion1">
                             <h3> Style Guide </h3>
-                               <div class="child"><img class="zoom" src="../Content/Mockup4-1.png"></div>
+                                <div class="child"><a href="../Content/Mockup4-1.png" data-lightbox="BKTMockup" data-title="BKT Infographic Mockup"><img src="../Content/Mockup4-1.png"></a></div>
                             </div>
                         </div>
                     </div>
@@ -138,10 +141,10 @@
                    <div class="galleryContent up">
                        
                        
-                                <div class="child"><img src="../Content/Sketch4-1.png">
+                       <div class="child"><a href="../Content/Sketch4-1.png" data-lightbox="BKTsketches" data-title="BKT Infographic Sketches"><img src="../Content/Sketch4-1.png"></a>
                                     </div>
                             
-                                <div class="child"><img src="../Content/Sketch4-2.png"></div>
+                                <div class="child"><a href="../Content/Sketch4-1.png" data-lightbox="BKTsketches" data-title="BKT Infographic Sketches"><img src="../Content/Sketch4-2.png"></a></div>
                                    
                         </div>
                     
@@ -154,7 +157,7 @@
                         
                         
                         <div class="child left">
-                           <a href="../Content/BKT_Outcome1.png"><img src="../Content/BKT_Outcome1.png"></a>
+                           <a href="../Content/BKT_Outcome1.png" data-lightbox="BKTOutcome" data-title="BKT Infographic Outcome"><img src="../Content/BKT_Outcome1.png"></a>
                             
                         </div>
                         
@@ -218,7 +221,7 @@
             menu: '#myMenu',
             lockAnchors: false,
             anchors:['Background', 'Research', 'Process', 'Sketches','Outcome', 'Contact' ],
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
             navigationTooltips: ['Background', 'Research', 'Process', 'Sketches','Outcome', 'Contact' ],
             showActiveTooltip: false,

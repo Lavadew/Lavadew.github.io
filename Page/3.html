@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Wong's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="../fullpage.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../animation.css" />
+    <link rel="stylesheet" type="text/css" href="../lightbox.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="../fullpage.js"></script>
+    <script type="text/javascript" src="../lightbox.js"></script>
+    <script type="text/javascript" src="../dist/js/lightbox-plus-jquery.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
            <h1 id="title"> Paul Hype Page Website Revamp  </h1>
 
             <div class="galleryContent">
-                   <div class="mainPortion2 left margin"><img src="../Content/Banner3.png"></div>
+                <div class="mainPortion2 left margin"><a href="../Content/Banner3.png" data-lightbox="AdidasAds" data-title="PHP Banner"><img src="../Content/Banner3.png"></a></div>
                    <div class="subPortion1 right margin">
                     <h1 style="color:#2EC3E9;">Background Info</h1>
                         <p>Paul Hype Page is a company that helps foreigners or singapore citizens to start up their company in Singapore. Their aim is to provide as many information as possible to their customers. <br>
@@ -127,7 +130,7 @@
                         <div class="child flex">
                             <div style="flex:6" class="mainPortion2"> 
                             <h3> Things to do </h3>
-                              <div class="child"><img class="zoom" src="../Content/Mockup3-2.png"></div>
+                                <div class="child"><a href="../Content/Mockup3-2.png"data-lightbox="PHPMockup" data-title="PHP Mockup"><img src="../Content/Mockup3-2.png"></a></div>
                                <p>
                                     To modernize the website, use higher quality image as opposed to low quality stock images, less words & more images/vector, implement visual hierarchy and colour system.
                                 </p>
@@ -135,7 +138,7 @@
                             </div>
                             <div class="subPortion1">
                             <h3> Art Direction </h3>
-                               <div class="child"><img class="zoom" src="../Content/Mockup3-1.png"></div>
+                                <div class="child"><a href="../Content/Mockup3-1.png"data-lightbox="PHPMockup" data-title="PHP Mockup"><img src="../Content/Mockup3-1.png"></a></div>
                             </div>
                         </div>
                     </div>
@@ -149,12 +152,12 @@
                    <div class="galleryContent up">
                        
                        
-                                <div class="child2"><img src="../Content/Mockup3-3.png">
+                       <div class="child2"><a href="../Content/Mockup3-3.png"data-lightbox="PHPMockup" data-title="PHP Mockup"><img src="../Content/Mockup3-3.png"></a>
                                     </div>
                             
-                                <div class="child2"><img src="../Content/Mockup3-4.png"></div>
+                                <div class="child2"><a href="../Content/Mockup3-4.png"data-lightbox="PHPMockup" data-title="PHP Mockup"><img src="../Content/Mockup3-4.png"></a></div>
                                    
-                                <div class="child2"><img src="../Content/Mockup3-5.png">
+                                <div class="child2"><a href="../Content/Mockup3-5.png"data-lightbox="PHPMockup" data-title="PHP Mockup"><img src="../Content/Mockup3-5.png"></a>
                                     </div>
                         </div>
                     
@@ -165,7 +168,7 @@
                    <div class="galleryContent ">
                         
 
-                        <div class="child2 left"><a href="../Content/Mockup3-6.png"><img src="../Content/Mockup3-6.png"></a></div>
+                        <div class="child2 left"><a href="../Content/Mockup3-6.png"data-lightbox="PHPMockup" data-title="Final Outcome"><img src="../Content/Mockup3-6.png"></a></div>
 
                         
                         <div class="child">
@@ -227,7 +230,7 @@
             menu: '#myMenu',
             lockAnchors: false,
             anchors:['Title', 'Background', 'Research', 'Process', 'Mockup','Outcome', 'Contact' ],
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
             navigationTooltips: ['Title', 'Background', 'Research', 'Process', 'Mockup','Outcome', 'Contact' ],
             showActiveTooltip: false,

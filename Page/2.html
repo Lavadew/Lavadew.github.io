@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../fullpage.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../animation.css" />
+    <link rel="stylesheet" type="text/css" href="../lightbox.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="../fullpage.js"></script>
+    <script type="text/javascript" src="../lightbox.js"></script>
+    <script type="text/javascript" src="../dist/js/lightbox-plus-jquery.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
            <h1 id="title"> Adidas Campaign Series Poster </h1>
 
             <div class="galleryContent">
-                   <div class="mainPortion2 left margin"><img src="../Content/Banner2.png"></div>
+                <div class="mainPortion2 left margin"><a href="../Content/Banner2.png" data-lightbox="Adidasbanner" data-title="Adidas Banner"><img src="../Content/Banner2.png"></a></div>
                    <div class="subPortion1 right margin">
                     <h1 style="color:#2EC3E9;">Background Info</h1>
                         <p>Adidas is a German manufacturer of sportswear. It is the largest sportswear manufacturer in Europe and the second largest in the world. Adidas is well-known for their sports shoes as they implement new technology. As a result, Adidas dominate the soccer scene with their shoes. <br>
@@ -132,12 +135,12 @@
                             </div>
                             <div class="subPortion1">
                             <h3> Sketches </h3>
-                               <div class="child"><img src="../Content/Sketch2-1.png"></div>
-                                <div class="child"><img src="../Content/Sketch2-2.png"></div>
+                                <div class="child"><a href="../Content/Sketch2-1.png" data-lightbox="AdidasSketch" data-title="Adidas Sketches"><img src="../Content/Sketch2-1.png"></a></div>
+                                <div class="child"><a href="../Content/Sketch2-2.png" data-lightbox="AdidasSketch" data-title="Adidas Sketches"><img src="../Content/Sketch2-2.png"></a></div>
                             </div>
                             <div class="subPortion1">
                             <h3> Mockup </h3>
-                                <div class="child"><img src="../Content/Mockup2-1.png"></div>
+                                <div class="child"><a href="../Content/Mockup2-1.png" data-lightbox="AdidasMockup" data-title="Adidas Mockup"><img src="../Content/Mockup2-1.png"></a></div>
                             </div>
                         </div>
                     </div>
@@ -148,9 +151,15 @@
                 <div id="#fifthPage"  class="section section5">
                    <div class="galleryContent ">
                         
-                        <div class="child left"><img src="../Content/DAS_CA2_PrintAd_1.jpg"></div>
-                        <div class="child left"><img src="../Content/DAS_CA2_PrintAd_2.jpg"></div>
-                        <div class="child left"><img src="../Content/DAS_CA2_PrintAd_3.jpg"></div>
+                               <div class="child left">
+                               
+                               <a href="../Content/DAS_CA2_PrintAd_1.jpg" data-lightbox="AdidasAds" data-title="Adidas Print Ads"><img src="../Content/DAS_CA2_PrintAd_1.jpg">
+                                </a></div>
+                               
+                        
+                               <div class="child left"><a href="../Content/DAS_CA2_PrintAd_2.jpg" data-lightbox="AdidasAds" data-title="Adidas Print Ads"><img src="../Content/DAS_CA2_PrintAd_2.jpg"></a></div>
+                           
+                               <div class="child left"><a href="../Content/DAS_CA2_PrintAd_3.jpg" data-lightbox="AdidasAds" data-title="Adidas Print Ads"><img src="../Content/DAS_CA2_PrintAd_3.jpg"></a></div>
                         <div class="child right">
                         
                         <h1 style="color:#2EC3E9;">Final Outcome</h1>
@@ -208,7 +217,7 @@
             menu: '#myMenu',
             lockAnchors: false,
             anchors:['Title', 'Background', 'Problem', 'Process', 'Solution','Contact' ],
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
             navigationTooltips: ['Title', 'Background', 'Problem', 'Process', 'Solution','Contact' ],
             showActiveTooltip: false,

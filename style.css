@@ -408,14 +408,6 @@ input[type="submit"]:hover {
     color:rgba(33,198,236,1);
 }
 
-.zoom{
-    transition: ease-in-out 1s;
-}
-
-.zoom:hover{
-    transform:scale(1.5);
-}
-
 .margin {
     margin-top:2em;
     margin-right:2em;

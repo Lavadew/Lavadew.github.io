@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../fullpage.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../animation.css" />
+    <link rel="stylesheet" type="text/css" href="../lightbox.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="../fullpage.js"></script>
+    <script type="text/javascript" src="../lightbox.js"></script>
+    <script type="text/javascript" src="../dist/js/lightbox-plus-jquery.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
            <h1 id="title"> Benneth Tea Brand Design Packaging  </h1>
 
             <div class="galleryContent">
-                   <div class="mainPortion2 left margin"><img src="../Content/Banner5.png"></div>
+                <div class="mainPortion2 left margin"><a href="../Content/Banner5.png" data-lightbox="Bennethbanner" data-title="Benneth Banner"><img src="../Content/Banner5.png"></a></div>
                    <div class="subPortion1 right margin">
                     <h1 style="color:#2EC3E9;">Background Info</h1>
                         <p>We are required to think of a packaging solution for Morning Routine. We decided to do Tea Packaging as we believe we are able to enhance the whole experience of having Tea and we also want to solve problems that users have been facing when drinking tea. <br>
@@ -113,15 +116,15 @@
                         <div class="child flex">
                             <div class="mainPortion2"> 
                             <h3> Concept </h3>
-                              <div  class="child"><img src="../Content/Mockup5-2.png"></div>
+                                <div  class="child"><a href="../Content/Mockup5-2.png" data-lightbox="BennethMockup" data-title="Benneth Prototype"><img src="../Content/Mockup5-2.png"></a></div>
                                <p>
                                     We decided to surprise them through unique shapes and design. It is also eco-friendly as glue and tape are not needed.
                                 </p>
                             </div>
                             <div  class="subPortion1">
                             <h3> Style Guide </h3>
-                              <div class="child"><img  src="../Content/Mockup5-1.png"></div>
-                               <div class="child"><img src="../Content/Mockup5-3.png"></div>
+                                <div class="child"><a href="../Content/Mockup5-1.png" data-lightbox="BennethMockup" data-title="Benneth Artboard"><img  src="../Content/Mockup5-1.png"></a></div>
+                                <div class="child"><a href="../Content/Mockup5-3.png" data-lightbox="BennethMockup" data-title="Benneth Artboard"><img src="../Content/Mockup5-3.png"></a></div>
                             </div>
                         </div>
                     </div>
@@ -135,10 +138,10 @@
                    <div class="galleryContent up">
                        
                        
-                                <div style="flex:3" class="child"><img src="../Content/Mockup5-5.png">
+                       <div style="flex:3" class="child"><div class="child"><a href="../Content/Mockup5-5.png" data-lightbox="BennethMockup" data-title="Benneth Mockup"><img src="../Content/Mockup5-5.png"></a>
                                     </div>
                             
-                                <div style="flex:4" class="child"><img src="../Content/Mockup5-4.png"></div>
+                           <div style="flex:4" class="child"><div class="child"><a href="../Content/Mockup5-4.png" data-lightbox="BennethMockup" data-title="Benneth Mockup"><img src="../Content/Mockup5-4.png"></a></div>
                                    
                         </div>
                     
@@ -150,9 +153,8 @@
                    <div class="galleryContent ">
                         
                         
-                        <div style="flex:1" class="child left">
-                           <a href="../Content/Mockup5-6.png"><img src="../Content/Mockup5-6.png"></a>
-                            
+                        <div style="flex:1" class="child left"><div class="child"><a href="../Content/Mockup5-6.png" data-lightbox="BennethMockup" data-title="Benneth Mockup">
+                        <img src="../Content/Mockup5-6.png"></a>
                         </div>
                         
                         <div style="flex:3" class="child right">
@@ -219,7 +221,7 @@
             menu: '#myMenu',
             lockAnchors: false,
             anchors:['Background', 'Research', 'Process', 'Sketches','Outcome', 'Contact' ],
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
             navigationTooltips: ['Background', 'Research', 'Process', 'Sketches','Outcome', 'Contact' ],
             showActiveTooltip: false,
