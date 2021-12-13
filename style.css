@@ -481,6 +481,16 @@ input[type="submit"]:hover {
 
 form input,.form label{
     min-width:250px;}
+
+
+#myMenu ul li a{
+    text-decoration:none;
+    display:block;
+    color:#9420EF;
+    padding:5px;
+    font-size:14px;
+    font-weight:700;
+}
 }
 
 
