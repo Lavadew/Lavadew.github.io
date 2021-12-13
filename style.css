@@ -30,6 +30,7 @@ body{
     left: 1em;
     padding:1em;
     z-index: 70;
+    
 }
 
 #myMenu ul{
@@ -354,26 +355,6 @@ input[type="submit"]:hover {
     background-color: white;
 }
 
-/* Responsive Portion */
-
-@media only screen and (max-width: 600px) {
-    .Profile {
-        flex-direction:column;
-        align-items:center;
-        justify-content: center;
-        
-    }
-    
-    .text a {
-        margin:0 auto;
-    }
-    
-    .portfolioButton a{
-        padding:10px 5px;
-        font-size:14px;
-    }
-}
-
 /* Portfolio Content Section */
 
 .galleryContent {
@@ -413,5 +394,93 @@ input[type="submit"]:hover {
     margin-right:2em;
 }
 
+.awards {
+    margin:15px 0;
+}
+
+
+/* Responsive Portion */
+
+@media only screen and (max-width: 1024px) {
+    .contactUs , .Profile {
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        
+    }
+    
+    .text a {
+        margin:0 auto;
+    }
+    
+    .portfolioButton a{
+        padding:10px 5px;
+        font-size:14px;
+    }
+    
+    .galleryContent h1{
+        font-size:18px;
+    }
+    
+    h4 {
+        font-size:16px;
+    }
+    
+    p{
+        font-size:14px;
+    }
+    
+    .portfolio{
+        flex-direction:column;
+    }
+    
+    .portfolio .childbutton, .child2 {
+        width:100%;
+    }
+    
+    .slide {
+        height:70vh;
+    }
+    
+    #title {
+        font-size:24px;
+    }
+    
+    form input,.form label{
+    font-size:14px;
+    min-width:250px;}
+        
+    
+    form label{
+    margin:20px 0px 10px 0px;
+    }
+        
+    form{
+    padding:0px 0px 50px 0px;
+    }
+    
+    .details{
+        padding:50px;
+    }
+    
+    .supporting{
+        display:none;
+    }
+    
+    .section {
+        width:100%;
+    }
+    
+    .galleryContent, .mainPortion1, .mainPortion2,.subPortion1, .subPortion2, .flex{
+        flex-direction:column;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+
+form input,.form label{
+    min-width:250px;}
+}
 
 

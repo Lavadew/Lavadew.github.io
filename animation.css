@@ -1,5 +1,6 @@
 .active #profile, .active .left  {
     animation: slideInLeft 1s ease-in-out;
+    }
 }
 
 .active .aboutme  {
