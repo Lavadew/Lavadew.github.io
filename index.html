@@ -48,6 +48,7 @@
                         <h1> I'm Benjamin </h1>
                         <p> An Aspiring UX/UI Designer that is responsible in catering to your needs! <br> <b>This website is hard-coded by me using HTML/CSS! </b> </p>
                     </div>
+                    
                     <a class="btn-slice " href="#Portfolio">
                       <div class="top"><span>View Portfolio</span></div>
                       <div class="bottom"><span>View Portfolio</span></div>
@@ -177,7 +178,7 @@
                      </div>
                      
                      <div class="content">
-                         <img src="Contact.png" alt="Another Photo of me">
+                         <img class="footerImg" src="Contact.png" alt="Another Photo of me">
                      </div>
 
                      
@@ -268,6 +269,11 @@
             onSlideLeave: function(section, origin, destination, direction){}
         });
     </script>
+
+    <script>
+        new fullPage('#fullpage', {
+    responsiveWidth: 800
+});    </script>
 
 
 </body>
