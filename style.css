@@ -54,7 +54,11 @@ body{
     padding:1em;
     list-style: none;
     margin:0;
+<<<<<<< HEAD
     position: fixed;
+=======
+    position: fixed; 
+>>>>>>> parent of 5c8ecc8 (Delete)
     top: 0px;
     right: 1em;
     z-index: 70;
@@ -400,4 +404,57 @@ section {
     100% {
         transform: translate(0px);
     }
+<<<<<<< HEAD
+=======
+}
+
+@media only screen and (max-width:700px) {
+    
+    body, .text {
+        text-align: center;
+    }
+    
+    .supporting, .footerImg {
+        display:none;
+    }
+    
+    video {
+        width:80%;
+    }
+    
+    .main {
+        width:100%;
+    }
+    
+    #myMenu2 ,#myMenu2 ul, #myMenu ,#myMenu ul {
+        position:static;
+        justify-content: center;
+    }
+    
+    #myMenu, #myMenu2 {
+        flex-direction: column;
+    }
+    
+    #MenuLogo{
+        height:50px;
+    }
+
+    #myMenu ul li a, #myMenu2 ul li a{
+        font-size:1em;
+    }
+    .Profile, .parent, .portfolio  {
+        width:100%;
+        flex-direction: column;
+        justify-content: flex-start;
+         }
+    
+    .portfolio .childbutton {
+        width:100%;
+    }
+
+    .childbutton:hover {
+    transform: scale(0.7) rotate(2.0deg);
+    color: #fff;
+}
+>>>>>>> parent of 5c8ecc8 (Delete)
 }
